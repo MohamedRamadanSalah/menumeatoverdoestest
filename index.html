@@ -87,7 +87,14 @@
       .wrap {
         max-width: 1280px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 15px;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .wrap {
+          padding: 10px;
+        }
       }
 
       /* الهيدر المحسن */
@@ -109,6 +116,15 @@
         margin-bottom: 30px;
         position: relative;
         overflow: hidden;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .header {
+          flex-direction: column;
+          gap: 15px;
+          padding: 20px;
+        }
       }
 
       .header::before {
@@ -138,6 +154,15 @@
         align-items: center;
       }
 
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .brand {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+        }
+      }
+
       .logo {
         background: var(--gold-gradient);
         color: #000;
@@ -152,6 +177,14 @@
         transition: var(--transition);
       }
 
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .logo {
+          font-size: 1.1rem;
+          padding: 10px 15px;
+        }
+      }
+
       .logo:hover {
         transform: translateY(-3px);
         box-shadow: 0 12px 40px rgba(233, 195, 35, 0.3);
@@ -162,6 +195,13 @@
         color: var(--muted);
         font-weight: 600;
         position: relative;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .title {
+          font-size: 1rem;
+        }
       }
 
       .title::after {
@@ -181,6 +221,14 @@
         align-items: center;
       }
 
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .cta-row {
+          width: 100%;
+          justify-content: space-between;
+        }
+      }
+
       .search {
         display: flex;
         align-items: center;
@@ -190,6 +238,18 @@
         border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.05);
         transition: var(--transition);
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .search {
+          flex: 1;
+          max-width: 200px;
+        }
+        
+        .search input {
+          width: 100% !important;
+        }
       }
 
       .search:focus-within {
@@ -216,6 +276,18 @@
         display: flex;
         align-items: center;
         gap: 8px;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .btn {
+          padding: 10px 14px;
+          font-size: 0.9rem;
+        }
+        
+        .btn span {
+          display: none;
+        }
       }
 
       .btn-primary {
@@ -267,6 +339,14 @@
         transition: var(--transition);
         position: relative;
         overflow: hidden;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .cat {
+          padding: 10px 16px;
+          font-size: 0.9rem;
+        }
       }
 
       .cat::before {
@@ -337,6 +417,15 @@
         animation: fadeInUp 0.6s ease forwards;
       }
 
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .card {
+          flex-direction: column;
+          padding: 15px;
+          gap: 12px;
+        }
+      }
+
       @keyframes fadeInUp {
         to {
           opacity: 1;
@@ -385,6 +474,14 @@
         overflow: hidden;
       }
 
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .thumb {
+          min-width: 100%;
+          height: 150px;
+        }
+      }
+
       .card:hover .thumb {
         border-color: rgba(233, 195, 35, 0.3);
         transform: scale(1.05);
@@ -425,10 +522,24 @@
         line-height: 1.3;
       }
 
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .name {
+          font-size: 1rem;
+        }
+      }
+
       .desc {
         color: var(--muted);
         font-size: 0.95rem;
         line-height: 1.5;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .desc {
+          font-size: 0.9rem;
+        }
       }
 
       .price-row {
@@ -437,6 +548,15 @@
         align-items: center;
         margin-top: 12px;
         justify-content: space-between;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .price-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        }
       }
 
       .price {
@@ -448,6 +568,14 @@
         box-shadow: 0 8px 25px rgba(235, 41, 36, 0.2);
         font-size: 1rem;
         transition: var(--transition);
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .price {
+          padding: 8px 14px;
+          font-size: 0.95rem;
+        }
       }
 
       .card:hover .price {
@@ -491,6 +619,20 @@
         flex-direction: column;
         gap: 15px;
         z-index: 999;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        .fab {
+          left: 15px;
+          bottom: 15px;
+        }
+        
+        .fab .circle {
+          width: 50px;
+          height: 50px;
+          font-size: 1rem;
+        }
       }
 
       .fab .circle {
@@ -551,6 +693,14 @@
         text-align: center;
         position: relative;
         overflow: hidden;
+      }
+
+      /* تحسينات للهواتف المحمولة */
+      @media (max-width: 768px) {
+        footer {
+          padding: 20px 15px;
+          font-size: 0.85rem;
+        }
       }
 
       footer::before {
@@ -648,9 +798,11 @@
           </div>
           <button class="btn btn-ghost" id="toggleView" title="تبديل العرض">
             <i class="fa-solid fa-grip-vertical"></i>
+            <span>تبديل العرض</span>
           </button>
           <button class="btn btn-primary" id="downloadPDF">
-            <i class="fa-regular fa-file-pdf"></i>&nbsp;&nbsp;حمل PDF
+            <i class="fa-regular fa-file-pdf"></i>
+            <span>حمل PDF</span>
           </button>
         </div>
       </header>
