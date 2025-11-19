@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>MEAT OVERDOSE — منيو</title>
 
     <!-- Google Fonts -->
@@ -281,7 +284,7 @@
           padding: 8px 12px;
           font-size: 0.85rem;
         }
-        
+
         .btn-text {
           display: none;
         }
@@ -667,7 +670,7 @@
           left: 15px;
           bottom: 15px;
         }
-        
+
         .fab .circle {
           width: 50px;
           height: 50px;
@@ -812,26 +815,26 @@
         .wrap {
           padding: 8px;
         }
-        
+
         .header {
           padding: 12px;
         }
-        
+
         .card {
           padding: 12px;
         }
-        
+
         .thumb {
           height: 120px;
         }
-        
+
         .btn {
           padding: 6px 10px;
         }
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- تأثيرات الخلفية العائمة -->
     <div class="floating-bg"></div>
 
@@ -921,7 +924,7 @@
           name: "MOZZARELLA STICKS",
           desc: "أصابع جبنة موزاريلا مقرمشة تقدم مع صوص مارينارا",
           price: 140,
-          img:"snadawith.webp",
+          img: "meals.jfif",
         },
         {
           id: "m2",
@@ -929,7 +932,7 @@
           name: "CHICKEN WINGS",
           desc: "أجنحة دجاج مقرمشة مع الصوص المفضل",
           price: 160,
-          img: "San2.webp",
+          img: "saann2.jfif",
         },
         {
           id: "m3",
@@ -937,7 +940,7 @@
           name: "DYNAMITE SHRIMP",
           desc: "جمبري مقلي مقرمش بصوص ديناميت مميز",
           price: 180,
-          img: "sos.webp",
+          img: "sann11.jfif",
         },
         {
           id: "m4",
@@ -945,7 +948,7 @@
           name: "TENDERLOIN STEAK",
           desc: "شريحة فيليه مينيون تقدم مع صوص البيرنيز",
           price: 320,
-          img: "https://images.unsplash.com/photo-1604908177523-1b4e3b7c956f?auto=format&fit=crop&w=800&q=60",
+          img: "meals.jfif",
         },
         {
           id: "m5",
@@ -953,7 +956,7 @@
           name: "BRISKET MEAL",
           desc: "شرائح لحم برسكيت مدخن ببطء مع صوص الهيكوري",
           price: 280,
-          img: "https://images.unsplash.com/photo-1543352634-9f7b4c5aeb92?auto=format&fit=crop&w=800&q=60",
+          img: "saann2.jfif",
         },
         {
           id: "m6",
@@ -961,7 +964,7 @@
           name: "DOUBLE CHEESE SANDWICH",
           desc: "ساندوتش جبنة مزدوجة مع خبز طازج",
           price: 95,
-          img: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=60",
+          img: "sann11.jfif",
         },
         {
           id: "m7",
@@ -1067,7 +1070,7 @@
           });
           catsEl.appendChild(btn);
         });
-        
+
         // تحديث مؤشرات التمرير
         updateScrollIndicators();
       }
@@ -1075,21 +1078,21 @@
       /* ======== تحديث مؤشرات التمرير ======== */
       function updateScrollIndicators() {
         if (!scrollLeft || !scrollRight) return;
-        
+
         const scrollLeftVisible = catsEl.scrollLeft > 0;
-        const scrollRightVisible = 
-          catsEl.scrollLeft < (catsEl.scrollWidth - catsEl.clientWidth);
-        
+        const scrollRightVisible =
+          catsEl.scrollLeft < catsEl.scrollWidth - catsEl.clientWidth;
+
         if (scrollLeftVisible) {
-          scrollLeft.classList.add('visible');
+          scrollLeft.classList.add("visible");
         } else {
-          scrollLeft.classList.remove('visible');
+          scrollLeft.classList.remove("visible");
         }
-        
+
         if (scrollRightVisible) {
-          scrollRight.classList.add('visible');
+          scrollRight.classList.add("visible");
         } else {
-          scrollRight.classList.remove('visible');
+          scrollRight.classList.remove("visible");
         }
       }
 
@@ -1207,16 +1210,16 @@
 
       // التحكم في تمرير التصنيفات
       if (scrollLeft && scrollRight) {
-        scrollLeft.addEventListener('click', () => {
-          catsEl.scrollBy({ left: -200, behavior: 'smooth' });
+        scrollLeft.addEventListener("click", () => {
+          catsEl.scrollBy({ left: -200, behavior: "smooth" });
         });
-        
-        scrollRight.addEventListener('click', () => {
-          catsEl.scrollBy({ left: 200, behavior: 'smooth' });
+
+        scrollRight.addEventListener("click", () => {
+          catsEl.scrollBy({ left: 200, behavior: "smooth" });
         });
-        
-        catsEl.addEventListener('scroll', updateScrollIndicators);
-        window.addEventListener('resize', updateScrollIndicators);
+
+        catsEl.addEventListener("scroll", updateScrollIndicators);
+        window.addEventListener("resize", updateScrollIndicators);
       }
 
       /* ======== debounce بسيط ======== */
@@ -1247,5 +1250,5 @@
           }).catch(err => console.warn('تعذر تحميل prices.json', err));
         */
     </script>
-</body>
+  </body>
 </html>
